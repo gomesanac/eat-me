@@ -1,0 +1,11 @@
+body {
+  background-color: rgb(223, 127, 92);
+  margin: 0;
+}
+
+#login-page {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
