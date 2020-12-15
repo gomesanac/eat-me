@@ -1,0 +1,42 @@
+button {
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+
+button:hover {
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+
+button:active {
+  outline: none;
+  border: none;
+}
+
+button:focus {
+  outline: 0;
+}
+
+#header {
+  align-items: baseline;
+  background-color: #EBEBD3;
+  color: #333;
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  justify-content: space-between;
+  padding: 2vh;
+}
+
+#header-title {
+  margin: 0;
+}
+
+#profile-icon, #search-icon {
+  color: #333;
+  font-size: 6vh;
+  font-weight: 900;
+}
