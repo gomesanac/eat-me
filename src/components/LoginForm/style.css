@@ -34,12 +34,12 @@
   width: 35vh;
 }
 
-#email-input::placeholder, #password-input::placeholder{ /* Chrome, Firefox, Opera, Safari 10.1+ */
+#email-input::placeholder, #password-input::placeholder{
   color: #c2bfbf;
-  opacity: 1; /* Firefox */
+  opacity: 1;
 }
 
-#email-input:focus, #password-input:focus{ /* Chrome, Firefox, Opera, Safari 10.1+ */
+#email-input:focus, #password-input:focus{
   outline: none;
   border-bottom: 2px solid #F95738;
 }

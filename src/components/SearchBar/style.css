@@ -1,0 +1,33 @@
+#search-content {
+  background-color: #EBEBD3;
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  padding: 2vh;
+}
+
+#search-input {
+  background-color: #EBEBD3;
+  border: 1px solid #F95738;
+  color: #333;
+  height: 3vh;
+  margin: 1vh 0;
+  padding: 1vh;
+  width: max-content;
+}
+
+#search-input::placeholder {
+  color: #c2bfbf;
+  opacity: 1;
+}
+
+#search-input:focus {
+  outline: none;
+}
+
+#search-button {
+  background-color: #F95738;
+  border: none;
+  color: #EBEBD3;
+  height: 3vh;
+  margin: 1vh 0;
+}

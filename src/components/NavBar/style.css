@@ -1,0 +1,19 @@
+#nav {
+  align-items: baseline;
+  background-color: #EBEBD3;
+  color: #333;
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  justify-content: space-between;
+  padding: 2vh;
+}
+
+#nav-title {
+  margin: 0;
+}
+
+#profile-icon, #search-icon {
+  color: #333;
+  font-size: 6vh;
+  font-weight: 900;
+}
