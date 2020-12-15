@@ -30,8 +30,10 @@ module.exports = {
       },
     ],
     'import/prefer-default-export': 'off',
+    'import/extensions': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-member-accessibility': 'off',
+    'no-use-before-define': 'off',
   },
   settings: {
     'import/parsers': {
