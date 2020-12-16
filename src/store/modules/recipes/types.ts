@@ -60,13 +60,25 @@ export interface RecipesArray {
   meals: Recipe[]
 }
 
-export interface RecipeActionType {
-  type: RecipesTypes.LOAD_SUCCESS,
-  data: Recipe[]
+export interface LoadRequest {
+  type: RecipesTypes.LOAD_REQUEST;
 }
 
+export interface LoadSuccess {
+  type: RecipesTypes.LOAD_SUCCESS;
+  payload: {
+    data: Recipe[];
+  };
+}
+
+export interface LoadFailure {
+  type: RecipesTypes.LOAD_FAILURE;
+}
+
+export type RecipesAction = LoadRequest | LoadSuccess | LoadFailure;
+
 export interface RecipesState {
-  readonly data: Recipe[]
-  readonly error: boolean
-  readonly loading: boolean
+  readonly data: Recipe[];
+  readonly error: boolean;
+  readonly loading: boolean;
 }

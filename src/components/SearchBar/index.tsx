@@ -1,4 +1,6 @@
 import React, { ChangeEvent, FunctionComponent, useState } from 'react';
+import { connect } from 'react-redux';
+import { Dispatch, bindActionCreators } from 'redux';
 
 import './style.css';
 
@@ -42,4 +44,10 @@ const SearchBar: FunctionComponent = () => {
   );
 };
 
-export default SearchBar;
+const mapStateToProps = (state: ApplicationState) => {
+  repositories: state.RepositoriesReducer.data,
+}
+
+const mapDispatchToProps = (dispatch: Dispatch) => bindActionCreators(RepositoriesActions, dispatch)
+
+export default connect(mapStateToProps, mapDispatchToProps)(SearchBar);

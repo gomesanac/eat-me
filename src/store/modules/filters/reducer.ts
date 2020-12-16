@@ -1,5 +1,6 @@
 import { Reducer } from 'redux';
-import { FiltersState, FiltersTypes } from './types';
+
+import { FiltersState, FiltersTypes, FiltersAction } from './types';
 
 const INITIAL_STATE: FiltersState = {
   filter: '',
@@ -9,7 +10,7 @@ const INITIAL_STATE: FiltersState = {
 
 const FiltersReducer: Reducer<FiltersState> = (
   state = INITIAL_STATE,
-  action,
+  action: FiltersAction,
 ) => {
   switch (action.type) {
     case FiltersTypes.OPEN_FILTER:
@@ -19,8 +20,8 @@ const FiltersReducer: Reducer<FiltersState> = (
     case FiltersTypes.FILTER_DATA:
       return {
         ...state,
-        filter: action.filter,
-        search: action.search,
+        filter: action.payload.filter,
+        search: action.payload.search,
         searching: true,
       };
     default:
